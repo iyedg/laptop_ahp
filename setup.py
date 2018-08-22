@@ -7,13 +7,9 @@ def read(fname):
 
 
 setup(
-    name="laptop_ahp",
-
-    description="Implementation of a visual AHP tool",
-
+    name="ahppy",
+    description="A tool to model, build and evaluate AHP models",
     author="Iyed Ghedamsi",
-
     packages=find_packages(exclude=['data', 'figures', 'output', 'notebooks']),
-
     long_description=read('README.md'),
 )
