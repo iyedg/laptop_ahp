@@ -19,7 +19,9 @@ class AHP:
         """
         i = " ".join([s.title() for s in i.split("_")])
         j = " ".join([s.title() for s in j.split("_")])
-        return r"<b>{i}</b> is <b>{q}</b> times more important than <b>{j}</b>".format(
+        sentence = (r"<b>{i}</b> is <b>{q}</b> times more important" +
+                    "than <b>{j}</b>")
+        return sentence.format(
             i=i, j=j, q=q)
 
     def _on_change(self, change):
@@ -52,6 +54,10 @@ class AHP:
             if i == j:
                 self.pairwise_df.loc[i, j] = 1
                 continue
+            else:
+                # TODO: find a better `neutral` value
+                self.pairwise_df.loc[i, j] = 0  # Dumb I know
+                self.pairwise_df.loc[j, i] = 0  # Reciprocal
             # The scale ranges from 1 to 9 in both positive and negative
             # directions. A minimum of 8 is used, the value will be adjusted
             # for negative values when calculating
