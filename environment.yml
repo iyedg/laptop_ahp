@@ -3,7 +3,9 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - apipkg=1.5=py_0
   - appdirs=1.4.3=py_1
+  - argh=0.26.2=py36_1
   - asn1crypto=0.24.0=py36_2
   - atomicwrites=1.1.5=py36_0
   - attrs=18.1.0=py_1
@@ -14,12 +16,15 @@ dependencies:
   - ca-certificates=2018.8.13=ha4d7672_0
   - certifi=2018.8.13=py36_0
   - cffi=1.11.5=py36h5e8e0c9_1
+  - colorama=0.3.9=py_1
   - constantly=15.1.0=py_0
   - cryptography=2.3.1=py36hdffb7b8_0
   - cryptography-vectors=2.3.1=py36_0
   - dbus=1.13.0=h3a4f0e9_0
   - decorator=4.3.0=py_0
+  - docopt=0.6.2=py_1
   - entrypoints=0.2.3=py36_1
+  - execnet=1.5.0=py_0
   - expat=2.2.5=hfc679d8_1
   - fontconfig=2.13.0=h65d0f4c_5
   - freetype=2.9.1=h6debe1e_1
@@ -74,6 +79,7 @@ dependencies:
   - pandoc=2.2.2=1
   - pandocfilters=1.4.2=py_1
   - parso=0.3.1=py_0
+  - pathtools=0.1.2=py_1
   - pcre=8.41=h470a237_2
   - pexpect=4.6.0=py36_0
   - pickleshare=0.7.4=py36_0
@@ -91,6 +97,10 @@ dependencies:
   - pyopenssl=18.0.0=py36_0
   - pyqt=5.6.0=py36h8210e8a_6
   - pytest=3.7.2=py36_0
+  - pytest-forked=0.2=py36_0
+  - pytest-sugar=0.9.0=py_3
+  - pytest-watch=4.1.0=py36_0
+  - pytest-xdist=1.22.5=0
   - python=3.6.6=h5001a0f_0
   - python-dateutil=2.7.3=py_0
   - pytz=2018.5=py_0
@@ -106,11 +116,13 @@ dependencies:
   - sip=4.18=py36_1
   - six=1.11.0=py36_1
   - sqlite=3.24.0=h2f33b56_0
+  - termcolor=1.1.0=py_2
   - terminado=0.8.1=py36_0
   - testpath=0.3.1=py36_0
   - tk=8.6.8=0
   - tornado=5.1=py36h470a237_1
   - traitlets=4.3.2=py36_0
+  - watchdog=0.8.3=py_2
   - wcwidth=0.1.7=py_1
   - webencodings=0.5=py36_0
   - wheel=0.31.1=py36_1
@@ -133,6 +145,9 @@ dependencies:
   - pip:
     - ahppy==0.0.0
     - babelfish==0.5.5
+    - beautifulsoup4==4.6.3
+    - chardet==3.0.4
+    - click==6.7
     - dogpile.cache==0.6.6
     - enzyme==0.4.1
     - guessit==3.0.0
@@ -142,9 +157,12 @@ dependencies:
     - pyte==0.8.0
     - rarfile==3.0
     - rebulk==0.9.0
+    - requests==2.19.1
     - stevedore==1.28.0
     - subliminal==2.0.5
     - svgwrite==1.1.12
     - termtosvg==0.3.0
+    - urllib3==1.23
+    - pytest-sugar==0.9.1
 prefix: /home/iyed/anaconda3/envs/ahppy
 
